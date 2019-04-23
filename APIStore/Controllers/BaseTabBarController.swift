@@ -10,7 +10,7 @@ import UIKit
 
 class BaseTabBarController: UITabBarController {
 
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         viewControllers = [buildANavigationVC(theVC: UIViewController(), theTitle: "Today", theImage: #imageLiteral(resourceName: "today_icon")),
