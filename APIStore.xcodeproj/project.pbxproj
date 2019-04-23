@@ -99,13 +99,13 @@
 		83900D92226F999600380898 /* APIStore */ = {
 			isa = PBXGroup;
 			children = (
+				83900DC3226FA7F800380898 /* Controllers */,
 				83900D93226F999600380898 /* AppDelegate.swift */,
-				83900D95226F999600380898 /* ViewController.swift */,
 				83900D97226F999600380898 /* Main.storyboard */,
+				83900D95226F999600380898 /* ViewController.swift */,
 				83900D9A226F999600380898 /* Assets.xcassets */,
 				83900D9C226F999600380898 /* LaunchScreen.storyboard */,
 				83900D9F226F999600380898 /* Info.plist */,
-				83900DC1226F9A2100380898 /* BaseTabBarController.swift */,
 			);
 			path = APIStore;
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				83900DB5226F999600380898 /* Info.plist */,
 			);
 			path = APIStoreUITests;
+			sourceTree = "<group>";
+		};
+		83900DC3226FA7F800380898 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83900DC1226F9A2100380898 /* BaseTabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
