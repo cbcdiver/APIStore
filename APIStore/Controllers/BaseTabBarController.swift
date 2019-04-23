@@ -15,7 +15,7 @@ class BaseTabBarController: UITabBarController {
         
         viewControllers = [buildANavigationVC(theVC: UIViewController(), theTitle: "Today", theImage: #imageLiteral(resourceName: "today_icon")),
                            buildANavigationVC(theVC: UIViewController(), theTitle: "Apps", theImage: #imageLiteral(resourceName: "apps")),
-                           buildANavigationVC(theVC: UIViewController(), theTitle: "Search", theImage: #imageLiteral(resourceName: "search")),
+                           buildANavigationVC(theVC: SearchCollectionViewController(), theTitle: "Search", theImage: #imageLiteral(resourceName: "search")),
         ]
     }
 

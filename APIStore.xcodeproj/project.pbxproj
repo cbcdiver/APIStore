@@ -15,6 +15,7 @@
 		83900DA9226F999600380898 /* APIStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83900DA8226F999600380898 /* APIStoreTests.swift */; };
 		83900DB4226F999600380898 /* APIStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83900DB3226F999600380898 /* APIStoreUITests.swift */; };
 		83900DC2226F9A2100380898 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83900DC1226F9A2100380898 /* BaseTabBarController.swift */; };
+		83900DC5226FAA9700380898 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83900DC4226FAA9700380898 /* SearchCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		83900DB3226F999600380898 /* APIStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStoreUITests.swift; sourceTree = "<group>"; };
 		83900DB5226F999600380898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83900DC1226F9A2100380898 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		83900DC4226FAA9700380898 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				83900DC1226F9A2100380898 /* BaseTabBarController.swift */,
+				83900DC4226FAA9700380898 /* SearchCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83900DC5226FAA9700380898 /* SearchCollectionViewController.swift in Sources */,
 				83900D96226F999600380898 /* ViewController.swift in Sources */,
 				83900D94226F999600380898 /* AppDelegate.swift in Sources */,
 				83900DC2226F9A2100380898 /* BaseTabBarController.swift in Sources */,
