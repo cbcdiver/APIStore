@@ -12,14 +12,24 @@ class BaseTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        
+        viewControllers = [buildANavigationVC(theVC: UIViewController(), theTitle: "Today", theImage: #imageLiteral(resourceName: "today_icon")),
+                           buildANavigationVC(theVC: UIViewController(), theTitle: "Apps", theImage: #imageLiteral(resourceName: "apps")),
+                           buildANavigationVC(theVC: UIViewController(), theTitle: "Search", theImage: #imageLiteral(resourceName: "search")),
+        ]
     }
 
     func buildANavigationVC(theVC: UIViewController, theTitle: String, theImage:UIImage) -> UINavigationController {
         
         let theNVC = UINavigationController(rootViewController: theVC)
         
+        theNVC.navigationBar.prefersLargeTitles = true
+        theNVC.tabBarItem.title = theTitle
+        theNVC.tabBarItem.image = theImage
+        
+        theVC.navigationItem.title = theTitle
+        theVC.view.backgroundColor = .white
+        
         return theNVC
     }
-    
 }
