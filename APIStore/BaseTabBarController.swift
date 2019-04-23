@@ -21,12 +21,15 @@ class BaseTabBarController: UITabBarController {
 
     func buildANavigationVC(theVC: UIViewController, theTitle: String, theImage:UIImage) -> UINavigationController {
         
+        // Embed the given VC into an NVC
         let theNVC = UINavigationController(rootViewController: theVC)
         
+        // Setup the NVC
         theNVC.navigationBar.prefersLargeTitles = true
         theNVC.tabBarItem.title = theTitle
         theNVC.tabBarItem.image = theImage
         
+        // Setup the VC
         theVC.navigationItem.title = theTitle
         theVC.view.backgroundColor = .white
         
