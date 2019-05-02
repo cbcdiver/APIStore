@@ -13,13 +13,13 @@ class BaseTabBarController: UITabBarController {
         override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewControllers = [buildANavigationVC(theVC: UIViewController(), theTitle: "Today", theImage: #imageLiteral(resourceName: "today_icon")),
-                           buildANavigationVC(theVC: UIViewController(), theTitle: "Apps", theImage: #imageLiteral(resourceName: "apps")),
-                           buildANavigationVC(theVC: SearchCollectionViewController(), theTitle: "Search", theImage: #imageLiteral(resourceName: "search")),
+        viewControllers = [buildANavigationCon(theVC: UIViewController(), theTitle: "Today", theImage: #imageLiteral(resourceName: "today_icon")),
+                           buildANavigationCon(theVC: UIViewController(), theTitle: "Apps", theImage: #imageLiteral(resourceName: "apps")),
+                           buildANavigationCon(theVC: SearchCollectionViewController(), theTitle: "Search", theImage: #imageLiteral(resourceName: "search")),
         ]
     }
 
-    func buildANavigationVC(theVC: UIViewController, theTitle: String, theImage:UIImage) -> UINavigationController {
+    func buildANavigationCon(theVC: UIViewController, theTitle: String, theImage:UIImage) -> UINavigationController {
         
         // Embed the given VC into an NVC
         let theNVC = UINavigationController(rootViewController: theVC)
